@@ -20,7 +20,7 @@ export default defineConfig({
   srcDir: "./src",
 
   // 项目的构建输出位置，相对于项目根目录。默认值： ./.vitepress/dist
-  // outDir: "../public",
+  outDir: "../dist",
 
   // 指定放置生成的静态资源的目录。默认值：assets。该路径应位于 outDir 内，并相对于它进行解析。
   // assetsDir: "static",
