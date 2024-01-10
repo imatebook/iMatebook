@@ -73,33 +73,34 @@ footer: false
 [<img src="https://github-readme-stats.vercel.app/api/pin/?username=xugaoyi&amp;repo=vuepress-theme-vdoing" alt="ReadMe Card" class="no-zoom">](https://github.com/dongfangwangyou/imatebook)
 [<img src="https://github-readme-stats.vercel.app/api/pin/?username=xugaoyi&amp;repo=vuepress-theme-vdoing-doc" alt="ReadMe Card" class="no-zoom">](https://doc.xugaoyi.com/)
 
-本站主题是 [`iMatebook`](https://github.com/dongfangwangyou/imatebook)，这是一款简洁高效的 vitePress 知识管理&博客 主题。旨在轻松打造一个`结构化`与`碎片化`并存的个人在线知识库&博客，让你的知识海洋像一本本书一样清晰易读。配合多维索引，让每一个知识点都可以快速定位！ [Github 地址](https://github.com/dongfangwangyou/imatebook) | [在线 vscode 预览源码](https://github1s.com/xugaoyi/vuepress-theme-vdoing)
+本站主题是 [`iMatebook`](https://github.com/dongfangwangyou/imatebook)，这是一款简洁高效的 vitePress 知识管理&博客 主题。旨在轻松打造一个`结构化`与`碎片化`并存的个人在线知识库&博客，让你的知识海洋像一本本书一样清晰易读。配合多维索引，让每一个知识点都可以快速定位！ [Github 地址](https://github.com/dongfangwangyou/imatebook) | 
+<!-- [在线 vscode 预览源码](https://github1s.com/xugaoyi/vuepress-theme-vdoing) -->
 
-## 赞助商
+<!-- ## 赞助商
 
 > 进入以下链接注册一下，赞助商会为博主赞助一笔小费，感谢~
 
 <p align="center">
 <a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://jsd.cdn.zzko.cn/gh/xugaoyi/blog-gitalk-comment@master/img/Apifox-860x320.ic7tz1417sw.png" alt="赞助商" style="width: 400px;border-radius: 2px;"></a>
-</p>
+</p> -->
 
 ## 🐼Me
 
-web 前端小学生
+<!-- web 前端小学生
 
 ### 技能
 
 - 熟悉 JavaScript、HTML、CSS、Vue、React 的拼写
 - 了解 Linux、windows、macOS 的开关机方式
-- 精通 Git 的 pull 和 push，并注册了 GitHub 帐号刷了一些 star
+- 精通 Git 的 pull 和 push，并注册了 GitHub 帐号刷了一些 star -->
 
 <!-- 本人↓↓↓ -->
 
-## 前端学习
+<!-- ## 前端学习
 
 <br/>
 <img src="https://open.weixin.qq.com/qr/code?username=gh_0cf4b813918c"  style="width:100px;" />
-关注公众号，回复`前端资源`，即可获取这些 [前端学习资源](https://github.com/xugaoyi/blog-gitalk-comment/wiki/Front-end-Study)。
+关注公众号，回复`前端资源`，即可获取这些 [前端学习资源](https://github.com/xugaoyi/blog-gitalk-comment/wiki/Front-end-Study)。 -->
 
 ## :email: 联系
 
