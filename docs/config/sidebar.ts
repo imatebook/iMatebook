@@ -21,6 +21,14 @@ export const sidebar = {
           ],
           collapsed: false,
         },
+        {
+          text: "Android 面试宝典",
+          items: [
+            { text: "Java 基础", link: "/android/interview/#java-基础" },
+            { text: "Android 基础", link: "/android/interview/#android-基础" },
+          ],
+          collapsed: false,
+        },
       ],
     },
   ],

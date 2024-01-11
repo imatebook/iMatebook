@@ -1,16 +1,16 @@
 ---
 title: Android
-titleTemplate: 安卓
-description: Android
+titleTemplate: 面试宝典
+description: Android 面试宝典
 layout: doc
 navbar: true
-sidebar: false
+sidebar: true
 outline: 2
 lastUpdated: true
 editLink: false
 footer: true
 ---
 
-# Android 基础
+# Android 面试宝典
 
 #

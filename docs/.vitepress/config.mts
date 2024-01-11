@@ -27,7 +27,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "/img/logo.png",
+    logo: "https://istatic.netlify.app/blog/logo.png",
 
     // 导航栏
     nav: nav,
@@ -45,7 +45,7 @@ export default defineConfig({
     },
     footer: {
       message:
-        '基于 <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a> 许可发布',
+        '基于 <a href="https://github.com/dongfangwangyou/imatebook/main/LICENSE">MIT License</a> 许可发布',
       copyright:
         'Copyright © 2019-2024 <a href="https://github.com/dongfangwangyou">dongfangwangyou</a>',
     },

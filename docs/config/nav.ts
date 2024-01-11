@@ -48,6 +48,9 @@ export const nav = [
         text: "kotlin 基础",
         items: [{ text: "", link: "/android/kotlin/" }],
       },
+      {
+        items: [{ text: "Android 面试宝典", link: "/android/interview/" }],
+      },
     ],
   },
   {

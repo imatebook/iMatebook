@@ -4,7 +4,7 @@ titleTemplate: 安卓
 description: Android
 layout: doc
 navbar: true
-sidebar: false
+sidebar: true
 outline: 2
 lastUpdated: true
 editLink: false
