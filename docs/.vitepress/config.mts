@@ -27,7 +27,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "https://istatic.netlify.app/blog/logo.png",
+    logo: "https://icdn.netlify.app/blog/logo.png",
 
     // 导航栏
     nav: nav,

@@ -6,7 +6,7 @@ hero:
   # text: 总存款
   tagline: 总存款（计算日期截止至上月）
   image:
-    src: "https://istatic.netlify.app/blog/logo_large.png"
+    src: "https://icdn.netlify.app/blog/logo_large.png"
     alt: logo
   actions:
     - theme: brand
@@ -112,6 +112,10 @@ const balance = computed(() => {
 }
 .h2 {
     margin: 20px 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
     color: #333333;
