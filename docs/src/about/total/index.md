@@ -124,7 +124,6 @@ const balance = computed(() => {
 }
 .item {
     width: 100%;
-    padding: 8px 0;
     margin: 5px 0;
     display: flex;
     flex-direction: row;
@@ -135,7 +134,7 @@ const balance = computed(() => {
 }
 .name {
     height: 100%;
-    padding: 0 10px;
+    padding: 8px 10px;
     flex: 1;
     display: flex;
     justify-content: scenter;
@@ -145,20 +144,9 @@ const balance = computed(() => {
     text-align: center;
     color: #333333;
 }
-.unit {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: scenter;
-    align-items: center;
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    color: #333333;
-}
 .value {
     height: 100%;
-    padding: 0 10px;
+    padding: 8px 10px;
     flex: 1;
     border-left: 1px dashed #ccc;
     border-right: 1px dashed #ccc;
