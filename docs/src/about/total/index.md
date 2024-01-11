@@ -20,7 +20,7 @@ features:
     details: 本月预估收入（工资21500 + 工资4000）
 
   - title: "￥ -7000"
-    details: 上月实际支付（消费5440 + 学费1560）
+    details: 本月预估支出（消费5440 + 学费1560）
 
   - title: "￥ 0"
     details: 上月实际存款（实际收入0 - 实际支出0）
@@ -29,7 +29,7 @@ features:
     details: 上月实际收入（工资0+ 工资0）
 
   - title: "￥ 0"
-    details: 上月实际支付（消费0 + 学费0）
+    details: 上月实际支出（消费0 + 学费0）
 ---
 
 <script setup>
@@ -73,26 +73,31 @@ const disburse = computed(() => {
     : disburseList.map(item => item.value).reduce((accumulator, current) => accumulator + current) 
     return `${_disburse}`
 })
+const balance = computed(() => {
+    let _income = incomeList.length == 0 ? 0 
+    : incomeList.map(item => item.value).reduce((accumulator, current) => accumulator + current) 
+    let _disburse = disburseList.length == 0 ? 0 
+    : disburseList.map(item => item.value).reduce((accumulator, current) => accumulator + current) 
+    let _balance = _income + _disburse
+    return _balance > 0 ? `+${_balance}` : '0'
+})
 </script>
 
 <div :class="$style.layout">
-    <h2 :class="$style.h2">月度账单</h2>
+    <h2 :class="$style.h2">
+        <div>月度账单</div>
+        <div :class="$style.h4">（￥ {{ balance }}）</div>
+    </h2>
     <h4 :class="$style.h4">全部收入（￥ {{ income }}）</h4>
     <div :class="$style.item" v-for="item in incomeList">
         <div :class="$style.name">{{ item.time }}</div>
-        <div :class="$style.value">
-            <div :class="$style.unit">￥</div>
-            <div>+{{ item.value }}</div>
-        </div>
+        <div :class="$style.value">￥ +{{ item.value }}</div>
         <div :class="$style.name">{{ item.name }}</div>
     </div>
     <h4 :class="$style.h4">全部支出（￥ {{ disburse }}）</h4>
     <div :class="$style.item" v-for="item in disburseList">
         <div :class="$style.name">{{ item.time }}</div>
-        <div :class="$style.value">
-          <div :class="$style.unit">￥</div>
-          <div>{{ item.value }}</div>
-        </div>
+        <div :class="$style.value">￥ {{ item.value }}</div>
         <div :class="$style.name">{{ item.name }}</div>
     </div>
 </div>
@@ -119,7 +124,7 @@ const disburse = computed(() => {
 }
 .item {
     width: 100%;
-    height: 38px;
+    padding: 8px 0;
     margin: 5px 0;
     display: flex;
     flex-direction: row;
@@ -142,7 +147,6 @@ const disburse = computed(() => {
 }
 .unit {
     height: 100%;
-    margin: 0 5px 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: scenter;
@@ -154,7 +158,7 @@ const disburse = computed(() => {
 }
 .value {
     height: 100%;
-    margin: 0 10px;
+    padding: 0 10px;
     flex: 1;
     border-left: 1px dashed #ccc;
     border-right: 1px dashed #ccc;
