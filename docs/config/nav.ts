@@ -1,6 +1,5 @@
 // import { type NavItem } from 'vitepress/types/default-theme'
-import { type DefaultTheme } from 'vitepress/types/default-theme'
-
+import { type DefaultTheme } from "vitepress/types/default-theme";
 
 export const nav = [
   { text: "首页", link: "/" },
@@ -49,7 +48,8 @@ export const nav = [
         items: [{ text: "", link: "/android/kotlin/" }],
       },
       {
-        items: [{ text: "Android 面试宝典", link: "/android/interview/" }],
+        text: "《Android面试宝典》系列",
+        items: [{ text: "Android基础面试题", link: "/android/interview/base/" }],
       },
     ],
   },

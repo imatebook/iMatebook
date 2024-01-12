@@ -13,11 +13,6 @@ footer: true
 
 # Android 面试宝典
 
-## Java 基础
+## Java 基础问题
 
-#### 1. java 中 == 和 equals 和 hashCode 的区别
-基本数据类型（byte、short、char、int、long、float、double、boolean）比较，应该使用 == ，比较的是他们的值。
-
-
-
-## Android 基础
+## Android 基础问题

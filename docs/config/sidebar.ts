@@ -14,18 +14,19 @@ export const sidebar = {
           collapsed: false,
         },
         {
-          text: "Android Studio",
+          text: "《AndroidStudio教程》系列",
           items: [
             { text: "Android Studio 安装", link: "/android/studio/" },
             { text: "Android Studio 配置", link: "/android/studio/" },
+            { text: "Gradle 相关", link: "/android/studio/" },
           ],
           collapsed: false,
         },
         {
-          text: "Android 面试宝典",
+          text: "《Android面试宝典》系列",
           items: [
-            { text: "Java 基础", link: "/android/interview/#java-基础" },
-            { text: "Android 基础", link: "/android/interview/#android-基础" },
+            { text: "Android基础面试题（58题）", link: "/android/interview/base/" },
+            { text: "Android基础", link: "/android/interview/#android-基础" },
           ],
           collapsed: false,
         },
