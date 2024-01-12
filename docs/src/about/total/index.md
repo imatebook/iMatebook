@@ -8,9 +8,6 @@ hero:
   image:
     src: "https://icdn.netlify.app/blog/logo_large.png"
     alt: logo
-  actions:
-    - theme: brand
-      text: 首页
 
 features:
   - title: "￥ +18500"
