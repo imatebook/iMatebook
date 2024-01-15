@@ -1,13 +1,7 @@
 ---
-<<<<<<< HEAD
 title: Android面试基础知识点
 titleTemplate: 《Android面试宝典》系列
 description: Android面试基础知识点、Android面试宝典
-=======
-title: Android面试常见58题
-titleTemplate: 《Android面试宝典》系列
-description: Android基础面试题、Android面试常见58题
->>>>>>> dd0790822d34bb92b706e926265b8d67a7c336df
 layout: doc
 navbar: true
 sidebar: true
