@@ -44,12 +44,21 @@ export const nav = [
       },
       { text: "Android Studio", link: "/android/studio/" },
       {
-        text: "kotlin 基础",
-        items: [{ text: "", link: "/android/kotlin/" }],
+        text: "",
+        items: [{ text: "kotlin 基础", link: "https://book.kotlincn.net/" }],
       },
       {
         text: "《Android面试宝典》系列",
-        items: [{ text: "Android基础面试题", link: "/android/interview/base/" }],
+        items: [
+          {
+            text: "Android面试专题：Java基础知识点",
+            link: "/android/interview/java/base",
+          },
+          {
+            text: "Android面试常问的基础知识点",
+            link: "/android/interview/base/android",
+          },
+        ],
       },
     ],
   },
@@ -100,11 +109,22 @@ export const nav = [
     text: "Web",
     items: [
       {
-        text: "Web 基础",
         items: [
           { text: "CSS", link: "/pages/markdown-examples" },
           { text: "JavaScript", link: "/pages/api-examples" },
           { text: "HTML", link: "/pages/8309a5b876fc95e3/" },
+        ],
+      },
+      {
+        items: [
+          {
+            text: "NodeJS",
+            link: "https://www.nodeapp.cn/",
+          },
+          {
+            text: "Vue 文档",
+            link: "https://cn.vuejs.org/guide/introduction.html",
+          },
         ],
       },
       { text: "web 面试宝典", link: "/android/" },
@@ -190,5 +210,17 @@ export const nav = [
     link: "/favorite/",
   },
   // { text: "站点导航", link: "/nav" },
-  { text: "关于", link: "/about/" },
+  {
+    text: "关于",
+    items: [
+      {
+        text: "关于博客",
+        link: "/about/",
+      },
+      {
+        text: "关于作者",
+        link: "/about/me",
+      },
+    ],
+  },
 ];
