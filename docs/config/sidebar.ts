@@ -25,8 +25,8 @@ export const sidebar = {
         {
           text: "《Android面试宝典》系列",
           items: [
-            { text: "Android基础面试题（58题）", link: "/android/interview/base/" },
-            { text: "Android基础", link: "/android/interview/#android-基础" },
+            { text: "Android面试常问的Java基础58题", link: "/android/interview/base/java" },
+            { text: "Android面试常问的基础知识点", link: "/android/interview/base/android" },
           ],
           collapsed: false,
         },

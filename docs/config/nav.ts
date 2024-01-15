@@ -49,7 +49,16 @@ export const nav = [
       },
       {
         text: "《Android面试宝典》系列",
-        items: [{ text: "Android基础面试题", link: "/android/interview/base/" }],
+        items: [
+          {
+            text: "Android面试常见的Java基础58题",
+            link: "/android/interview/base/java",
+          },
+          {
+            text: "Android面试常问的基础知识点",
+            link: "/android/interview/base/android",
+          },
+        ],
       },
     ],
   },
@@ -100,11 +109,22 @@ export const nav = [
     text: "Web",
     items: [
       {
-        text: "Web 基础",
         items: [
           { text: "CSS", link: "/pages/markdown-examples" },
           { text: "JavaScript", link: "/pages/api-examples" },
           { text: "HTML", link: "/pages/8309a5b876fc95e3/" },
+        ],
+      },
+      {
+        items: [
+          {
+            text: "NodeJS",
+            link: "https://www.nodeapp.cn/",
+          },
+          {
+            text: "Vue 文档",
+            link: "https://cn.vuejs.org/guide/introduction.html",
+          },
         ],
       },
       { text: "web 面试宝典", link: "/android/" },
