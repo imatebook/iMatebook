@@ -1,7 +1,5 @@
-// import { type NavItem } from 'vitepress/types/default-theme'
-import { type DefaultTheme } from "vitepress/types/default-theme";
-
-export const nav = [
+import { DefaultTheme } from "vitepress/theme";
+export const nav: DefaultTheme.NavItem[] = [
   { text: "首页", link: "/" },
   {
     text: "技术",

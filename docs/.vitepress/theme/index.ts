@@ -1,17 +1,18 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
-import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
-import './style.css'
-
+import { h } from "vue";
+import type { Theme } from "vitepress";
+import DefaultTheme from "vitepress/theme";
+import "./style.css";
+import asideTop from "../../components/aside-top.vue";
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
+      // "doc-top": () => h(asideTop),
+    });
   },
+  // Layout,
   enhanceApp({ app, router, siteData }) {
     // ...
-  }
-} satisfies Theme
+  },
+} satisfies Theme;

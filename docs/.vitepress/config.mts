@@ -1,9 +1,8 @@
-import { defineConfig } from "vitepress";
-import { nav, sidebar } from "../config";
-import { type DefaultTheme } from "vitepress/types/default-theme";
-
+import { defineConfig, defineConfigWithTheme } from "vitepress";
+import { nav, sidebar, vite } from "../configs";
+import { NativeThemeConfig } from "../native/types";
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default defineConfigWithTheme<NativeThemeConfig>({
   lang: "zh-CN",
 
   // 站点的标题。使用默认主题时，这将显示在导航栏中
@@ -35,6 +34,7 @@ export default defineConfig({
     // 侧边栏
     sidebar: sidebar,
 
+    // 社交链接
     socialLinks: [
       { icon: "github", link: "https://github.com/dongfangwangyou" },
     ],
@@ -43,12 +43,35 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+
+    outlineTitle: "页面导航",
+
+    // 文档页脚
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+
+    // 页脚信息（博客版权信息、备案信息等，支持a标签或换行标签</br>）
     footer: {
       message:
-        '基于 <a href="https://github.com/dongfangwangyou/imatebook/main/LICENSE">MIT License</a> 许可发布',
+        "<br>既是分享，也是沉淀。</br>" +
+        '<br>基于 <a href="https://github.com/dongfangwangyou/imatebook/main/LICENSE" target="_blank">MIT License</a> 许可发布<br>',
       copyright:
-        'Copyright © 2019-2024 <a href="https://github.com/dongfangwangyou">dongfangwangyou</a>',
+        'Copyright © 2019-2024 <a href="https://github.com/dongfangwangyou" target="_blank">dongfangwangyou</a>',
+      createYear: 2019,
+      copyrightHtml:
+        '<a href="https://github.com/dongfangwangyou" target="_blank">dongfangwangyou</a>',
     },
+    // 自定义页脚信息（优先级高于 footer）
+    nativeFooter: {
+      createYear: 2019,
+      copyright:
+        '<a href="https://github.com/dongfangwangyou" target="_blank">dongfangwangyou</a>',
+    },
+
+    returnToTopLabel: "返回顶部",
+
     notFound: {
       code: "404",
       title: "未找到相关内容哟~",
@@ -58,11 +81,17 @@ export default defineConfig({
   },
 
   // vite 配置
-  // vite: {},
+  vite: vite,
 
   // vue 配置
   // vue: {},
 
   // Markdown 配置
   // markdown: {},
+  markdown: {
+    lineNumbers: true,
+    toc: {
+      level: [2, 3],
+    },
+  },
 });
