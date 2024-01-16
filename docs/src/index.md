@@ -2,6 +2,9 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+# layout = home 时，自定义博客列表样式（目前只支持list一种样式），默认不显示，
+nativeBlog: list,
+
 hero:
   name: iMatebook
   text: 关于技术的、工作的、学习的、生活的...
@@ -44,11 +47,6 @@ const count = ref(0)
 </script>
 
 <div :class="$style.layout">
-   <h2 :class="$style.h2">特色功能</h2>
-   <h4 :class="$style.h4">一站式技术搜索</h4>
-   <div>本站内容中包含部分技术教程，可以利用搜索框快速搜索到相关文档,快速到达你想要找的内容。</div>
-   <h4 :class="$style.h4">深色模式</h4>
-   <div>关爱程序员，保护视力，点击右上角的主题模式按钮试试吧~</div>
    The count is: {{ count }}
   <button :class="$style.button" @click="count++">Increment</button>
 </div>
@@ -60,18 +58,6 @@ const count = ref(0)
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-}
-.h2 {
-    margin: 20px 0 5px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333333;
-}
-.h4 {
-    margin: 10px 0 5px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333333;
 }
 .button {
   color: red;

@@ -10,7 +10,8 @@
     "docs:preview": "vitepress preview docs --port 8080"
   },
   "devDependencies": {
-    "@types/node": "^20.11.3",
-    "vitepress": "^1.0.0-rc.35"
+    "@types/node": "^18.13.0",
+    "vitepress": "^1.0.0-rc.35",
+    "sass": "^1.58.0"
   }
 }

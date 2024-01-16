@@ -34,17 +34,22 @@ export const nav: DefaultTheme.NavItem[] = [
 
   {
     text: "Android",
-    activeMatch: "/android/",
+    // activeMatch: "/android/",
+    // base: "/android/",
     items: [
       {
-        text: "Android 基础",
+        text: "Android基础",
         items: [{ text: "", link: "/android/base/" }],
       },
-      { text: "Android Studio", link: "/android/studio/" },
+      {
+        text: "Android进阶",
+        items: [{ text: "", link: "/android/base/" }],
+      },
       {
         text: "",
         items: [{ text: "kotlin 基础", link: "https://book.kotlincn.net/" }],
       },
+      { text: "《AndroidStudio实战》系列", link: "/android/studio/" },
       {
         text: "《Android面试宝典》系列",
         items: [
