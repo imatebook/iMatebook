@@ -36,7 +36,8 @@ export default defineConfigWithTheme<NativeThemeConfig>({
 
     // 社交链接
     socialLinks: [
-      { icon: "github", link: "https://github.com/dongfangwangyou" },
+      //  不显示Github链接
+      // { icon: "github", link: "https://github.com/dongfangwangyou" },
     ],
 
     // 本地搜索。VitePress支持使用浏览器内置索引进行模糊全文搜索，这得益于minisearch
@@ -60,18 +61,12 @@ export default defineConfigWithTheme<NativeThemeConfig>({
     footer: {
       message:
         "<br>既是分享，也是沉淀。</br>" +
-        '<br>基于 <a href="https://github.com/dongfangwangyou/imatebook/main/LICENSE" target="_blank">MIT License</a> 许可发布<br>',
+        '<br>基于 <a href="https://github.com/imatebook/imatebook/main/LICENSE" target="_blank">MIT License</a> 许可发布<br>',
       copyright:
-        'Copyright © 2019-2024 <a href="https://github.com/dongfangwangyou" target="_blank">dongfangwangyou</a>',
+        'Copyright © 2019-2024 <a href="https://github.com/imatebook" target="_blank">iMatebook</a>',
       createYear: 2019,
       copyrightHtml:
-        '<a href="https://github.com/dongfangwangyou" target="_blank">dongfangwangyou</a>',
-    },
-    // 自定义页脚信息（优先级高于 footer）
-    nativeFooter: {
-      createYear: 2019,
-      copyright:
-        '<a href="https://github.com/dongfangwangyou" target="_blank">dongfangwangyou</a>',
+        ' <a href="https://github.com/imatebook" target="_blank">iMatebook</a>',
     },
 
     returnToTopLabel: "返回顶部",

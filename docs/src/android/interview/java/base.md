@@ -2,7 +2,6 @@
 title: Android面试专题：Java基础知识点
 titleTemplate: 《Android面试宝典》系列
 description: Android面试专题：Java基础知识点、《Android面试宝典》系列
-# outline: 3
 editLink: false
 ---
 

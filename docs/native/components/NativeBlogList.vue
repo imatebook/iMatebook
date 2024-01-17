@@ -35,11 +35,11 @@ fetchData()
 
 <template>
     <div class="layout">
-        <h2 class="h2">特色功能</h2>
+        <!-- <h2 class="h2">特色功能</h2>
         <h4 class="h4">一站式技术搜索</h4>
         <div>本站内容中包含部分技术教程，可以利用搜索框快速搜索到相关文档,快速到达你想要找的内容。</div>
         <h4 class="h4">深色模式</h4>
-        <div>关爱程序员，保护视力，点击右上角的主题模式按钮试试吧~</div>
+        <div>关爱程序员，保护视力，点击右上角的主题模式按钮试试吧~</div> -->
 
         <transition-group v-if="frontmatter.nativeBlog" tag="div" name="post">
             <div class="post card-box" v-for="(item, index) in blogList" :key="item.key">

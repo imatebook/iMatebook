@@ -2,13 +2,6 @@
 title: Java中==和equals()和hashCode()的区别
 titleTemplate: 《Android面试宝典》系列
 description: Android基础面试题、Android面试常见58题
-layout: doc
-navbar: true
-sidebar: true
-outline: 2
-lastUpdated: true
-editLink: false
-footer: true
 ---
 
 # Java 中==和 equals()和 hashCode()的区别：

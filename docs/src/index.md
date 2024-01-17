@@ -14,8 +14,8 @@ hero:
     alt: logo
   actions:
     - theme: brand
-      text: 开始学习之旅
-      link: /android/
+      text: 项目速览
+      link: /about/product
     - theme: alt
       text: API 速查
       link: /api

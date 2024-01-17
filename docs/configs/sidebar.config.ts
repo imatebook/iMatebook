@@ -5,26 +5,16 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: "Android",
       items: [
         {
-          text: "Android 基础",
-          items: [{ text: "", link: "/android/base/" }],
-          collapsed: false,
-        },
-        {
-          text: "kotlin 基础",
-          items: [{ text: "", link: "/android/kotlin/" }],
-          collapsed: false,
-        },
-        {
-          text: "《AndroidStudio教程》系列",
+          text: "Android开发者",
           items: [
-            { text: "Android Studio 安装", link: "/android/studio/" },
-            { text: "Android Studio 配置", link: "/android/studio/" },
-            { text: "Gradle 相关", link: "/android/studio/" },
+            { text: "Android基础", link: "/android/base/" },
+            { text: "Android进阶", link: "/android/base/" },
           ],
           collapsed: false,
         },
+
         {
-          text: "《Android面试宝典》系列",
+          text: "Android面试宝典",
           items: [
             {
               text: "Android面试专题：Java基础知识点",
@@ -41,6 +31,21 @@ export const sidebar: DefaultTheme.Sidebar = {
           ],
           collapsed: false,
         },
+        {
+          text: "Kotlin学习笔记",
+          link: "/android/kotlin/",
+          collapsed: false,
+        },
+        {
+          text: "FFmpeg学习笔记",
+          link: "/android/ffmpeg/",
+          collapsed: false,
+        },
+        {
+          text: "AndroidStudio使用教程",
+          link: "/android/studio/",
+          collapsed: false,
+        },
       ],
     },
   ],
@@ -52,8 +57,12 @@ export const sidebar: DefaultTheme.Sidebar = {
   ],
   "/web/": [
     {
-      text: "Web",
-      items: [{ text: "Web 基础", link: "/web/" }],
+      text: "Web开发者",
+      items: [
+        { text: "HTML", link: "/web/html/" },
+        { text: "CSS", link: "/web/css/" },
+        { text: "JavaScript", link: "/web/js/" },
+      ],
     },
   ],
   "/uni/": [

@@ -38,18 +38,16 @@ export const nav: DefaultTheme.NavItem[] = [
     // base: "/android/",
     items: [
       {
-        text: "Android基础",
-        items: [{ text: "", link: "/android/base/" }],
+        text: "Android开发者",
+        items: [
+          { text: "Android基础", link: "/android/base/" },
+          { text: "Android进阶", link: "/android/base/" },
+          {
+            text: "Android开发者平台",
+            link: "https://developer.android.google.cn/?hl=zh-cn",
+          },
+        ],
       },
-      {
-        text: "Android进阶",
-        items: [{ text: "", link: "/android/base/" }],
-      },
-      {
-        text: "",
-        items: [{ text: "kotlin 基础", link: "https://book.kotlincn.net/" }],
-      },
-
       {
         text: "Android面试宝典",
         items: [
@@ -68,18 +66,20 @@ export const nav: DefaultTheme.NavItem[] = [
         ],
       },
       {
-        text: "Android开发者",
-        items: [
-          {
-            text: "Android开发者平台",
-            link: "https://developer.android.google.cn/?hl=zh-cn",
-          },
-          {
-            text: "AndroidGradle插件版本说明",
-            link: "https://developer.android.com/build/releases/gradle-plugin?hl=zh-cn",
-          },
-          { text: "AndroidStudio专题：下载、安装、配置", link: "/android/studio/" },
-        ],
+        text: "Kotlin学习笔记",
+        link: "/android/kotlin/",
+      },
+      {
+        text: "RxJava学习笔记",
+        link: "/android/rxjava/",
+      },
+      {
+        text: "FFmpeg学习笔记",
+        link: "/android/ffmpeg/",
+      },
+      {
+        text: "AndroidStudio使用教程",
+        link: "/android/studio/",
       },
     ],
   },
@@ -130,16 +130,17 @@ export const nav: DefaultTheme.NavItem[] = [
     text: "Web",
     items: [
       {
+        text: "Web开发者",
         items: [
-          { text: "CSS", link: "/pages/markdown-examples" },
-          { text: "JavaScript", link: "/pages/api-examples" },
-          { text: "HTML", link: "/pages/8309a5b876fc95e3/" },
+          { text: "HTML", link: "/web/html/" },
+          { text: "CSS", link: "/web/css/" },
+          { text: "JavaScript", link: "/web/js/" },
         ],
       },
       {
         items: [
           {
-            text: "NodeJS",
+            text: "NodeJS 文档",
             link: "https://www.nodeapp.cn/",
           },
           {
@@ -147,8 +148,7 @@ export const nav: DefaultTheme.NavItem[] = [
             link: "https://cn.vuejs.org/guide/introduction.html",
           },
         ],
-      },
-      { text: "web 面试宝典", link: "/android/" },
+      }
     ],
   },
   {
@@ -235,12 +235,16 @@ export const nav: DefaultTheme.NavItem[] = [
     text: "关于",
     items: [
       {
-        text: "关于博客",
+        text: "关于我们",
         link: "/about/",
       },
       {
         text: "关于作者",
         link: "/about/me",
+      },
+      {
+        text: "关于项目",
+        link: "/about/product",
       },
     ],
   },
