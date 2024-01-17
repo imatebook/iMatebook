@@ -58,7 +58,11 @@ export const nav: DefaultTheme.NavItem[] = [
             link: "/android/interview/java/base",
           },
           {
-            text: "Android面试常问的基础知识点",
+            text: "Android面试专题：常问的基础知识点",
+            link: "/android/interview/base/android",
+          },
+          {
+            text: "Android面试专题：性能优化",
             link: "/android/interview/base/android",
           },
         ],

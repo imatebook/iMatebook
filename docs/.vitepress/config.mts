@@ -44,7 +44,11 @@ export default defineConfigWithTheme<NativeThemeConfig>({
       provider: "local",
     },
 
-    outlineTitle: "页面导航",
+    // outlineTitle: "页面导航",
+    outline: {
+      level: [2, 6],
+      label: "页面导航",
+    },
 
     // 文档页脚
     docFooter: {

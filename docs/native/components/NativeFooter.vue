@@ -10,6 +10,7 @@ const { hasSidebar } = useSidebar()
   <footer v-if="theme.footer && frontmatter.footer !== false" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
       <p class="link">
+        <a href="/about/me" target="_self">项目作品</a>
         <a href="/about/" target="_self">关于我们</a>
         <a href="/about/me" target="_self">关于作者</a>
       </p>
@@ -70,6 +71,6 @@ const { hasSidebar } = useSidebar()
 
 .link a {
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 </style>
