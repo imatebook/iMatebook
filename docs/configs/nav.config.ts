@@ -49,9 +49,9 @@ export const nav: DefaultTheme.NavItem[] = [
         text: "",
         items: [{ text: "kotlin 基础", link: "https://book.kotlincn.net/" }],
       },
-      { text: "《AndroidStudio实战》系列", link: "/android/studio/" },
+
       {
-        text: "《Android面试宝典》系列",
+        text: "Android面试宝典",
         items: [
           {
             text: "Android面试专题：Java基础知识点",
@@ -65,6 +65,20 @@ export const nav: DefaultTheme.NavItem[] = [
             text: "Android面试专题：性能优化",
             link: "/android/interview/base/android",
           },
+        ],
+      },
+      {
+        text: "Android开发者",
+        items: [
+          {
+            text: "Android开发者平台",
+            link: "https://developer.android.google.cn/?hl=zh-cn",
+          },
+          {
+            text: "AndroidGradle插件版本说明",
+            link: "https://developer.android.com/build/releases/gradle-plugin?hl=zh-cn",
+          },
+          { text: "AndroidStudio专题：下载、安装、配置", link: "/android/studio/" },
         ],
       },
     ],
