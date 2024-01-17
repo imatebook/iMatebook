@@ -1,7 +1,7 @@
 ---
 title: FFmpeg学习笔记
 titleTemplate: Android
-description: Android FFMPEG
+description: Android FFmpeg
 editLink: false
 ---
 
