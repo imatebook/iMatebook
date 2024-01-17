@@ -14,7 +14,7 @@ hero:
     alt: logo
   actions:
     - theme: brand
-      text: 项目速览
+      text: 项目产品
       link: /about/product
     - theme: alt
       text: API 速查
