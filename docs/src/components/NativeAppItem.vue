@@ -43,7 +43,7 @@ onMounted(() => {
 })
 
 </script>
-<style lang="scss" scoped>
+<style lang="scss" module>
 .item-wrap {
     width: 92.5%;
     padding: 15px 15px;
