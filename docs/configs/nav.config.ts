@@ -243,8 +243,8 @@ export const nav: DefaultTheme.NavItem[] = [
         link: "/about/me",
       },
       {
-        text: "关于项目",
-        link: "/about/product",
+        text: "我的项目",
+        link: "/about/product/",
       },
     ],
   },

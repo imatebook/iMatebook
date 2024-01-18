@@ -14,10 +14,10 @@ hero:
     alt: logo
   actions:
     - theme: brand
-      text: 项目产品
-      link: /about/product
+      text: 全部项目
+      link: /about/product/
     - theme: alt
-      text: API 速查
+      text: 项目经历
       link: /api
 
 features:
