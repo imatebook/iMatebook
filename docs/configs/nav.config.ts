@@ -7,8 +7,8 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: "技术文档",
         items: [
-          { text: "《Git 使用教程》", link: "/technology/git/" },
-          { text: "《Markdown 使用教程》", link: "/technology/md/" },
+          { text: "《Git 使用教程》", link: "/pages/technology/git/" },
+          { text: "《Markdown 使用教程》", link: "/pages/technology/md/" },
         ],
       },
       {
@@ -27,21 +27,19 @@ export const nav: DefaultTheme.NavItem[] = [
       },
       {
         text: "技术博客",
-        items: [{ text: "", link: "/technology/blog/" }],
+        items: [{ text: "", link: "/pages/technology/blog/" }],
       },
     ],
   },
 
   {
     text: "Android",
-    // activeMatch: "/android/",
-    // base: "/android/",
     items: [
       {
         text: "Android开发者",
         items: [
-          { text: "Android基础", link: "/android/base/" },
-          { text: "Android进阶", link: "/android/base/" },
+          { text: "Android基础", link: "/pages/android/base/" },
+          { text: "Android进阶", link: "/pages/android/base/" },
           {
             text: "Android开发者平台",
             link: "https://developer.android.google.cn/?hl=zh-cn",
@@ -53,33 +51,33 @@ export const nav: DefaultTheme.NavItem[] = [
         items: [
           {
             text: "Android面试专题：Java基础知识点",
-            link: "/android/interview/java/base",
+            link: "/pages/android/interview/java/base",
           },
           {
             text: "Android面试专题：常问的基础知识点",
-            link: "/android/interview/base/android",
+            link: "/pages/android/interview/base/android",
           },
           {
             text: "Android面试专题：性能优化",
-            link: "/android/interview/base/android",
+            link: "/pages/android/interview/base/android",
           },
         ],
       },
       {
         text: "Kotlin学习笔记",
-        link: "/android/kotlin/",
+        link: "/pages/android/kotlin/",
       },
       {
         text: "RxJava学习笔记",
-        link: "/android/rxjava/",
+        link: "/pages/android/rxjava/",
       },
       {
         text: "FFmpeg学习笔记",
-        link: "/android/ffmpeg/",
+        link: "/pages/android/ffmpeg/",
       },
       {
         text: "AndroidStudio使用教程",
-        link: "/android/studio/",
+        link: "/pages/android/studio/",
       },
     ],
   },
@@ -132,9 +130,9 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: "Web开发者",
         items: [
-          { text: "HTML", link: "/web/html/" },
-          { text: "CSS", link: "/web/css/" },
-          { text: "JavaScript", link: "/web/js/" },
+          { text: "HTML", link: "/pages/web/html/" },
+          { text: "CSS", link: "/pages/web/css/" },
+          { text: "JavaScript", link: "/pages/web/js/" },
         ],
       },
       {
@@ -157,7 +155,7 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         items: [
           { text: "uni-app 文档", link: "https://uniapp.dcloud.net.cn/" },
-          { text: "uni-app 学习手册", link: "/technology/md/" },
+          { text: "uni-app 学习手册", link: "/pages/technology/md/" },
         ],
       },
       {
@@ -170,7 +168,7 @@ export const nav: DefaultTheme.NavItem[] = [
             text: "uniCloud 服务空间",
             link: "https://unicloud.dcloud.net.cn/",
           },
-          { text: "uniCloud 学习手册", link: "/technology/md/" },
+          { text: "uniCloud 学习手册", link: "/pages/technology/md/" },
         ],
       },
       { text: "HBuild X", link: "https://hx.dcloud.net.cn/README" },
@@ -228,7 +226,7 @@ export const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: "收藏夹",
-    link: "/favorite/",
+    link: "/pages/favorite/",
   },
   // { text: "站点导航", link: "/nav" },
   {
@@ -236,15 +234,15 @@ export const nav: DefaultTheme.NavItem[] = [
     items: [
       {
         text: "关于我们",
-        link: "/about/",
+        link: "/pages/about/",
       },
       {
         text: "关于作者",
-        link: "/about/me",
+        link: "/pages/about/me",
       },
       {
-        text: "关于项目",
-        link: "/about/product",
+        text: "我的项目",
+        link: "/pages/about/product/",
       },
     ],
   },

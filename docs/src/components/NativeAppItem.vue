@@ -4,6 +4,7 @@
         <div class="name">
             <text>{{ app.name }}</text>
             <span>{{ app.age || '18+' }}</span>
+            <span>{{ app.download }}</span>
         </div>
         <div class="content">
             <div class="logo">
@@ -11,34 +12,28 @@
             </div>
             <div class="labels">
                 <div>
-                    <text>软件类别：</text>
                     <span>{{ app.category || '娱乐软件' }}</span>
                 </div>
-                <div>
-                    <text>软件语言：</text>
-                    <span>{{ app.language || '中文' }}</span>
-                </div>
-                <div>
-                    <text>开发者：</text>
-                    <span>{{ app.company || '未知' }}</span>
-                </div>
-                <div v-if="app.labels">
+                <div v-if="app.labels" class="wrap">
                     <span v-for="(item, index) in app.labels"
                         :class="index % 3 == 0 ? 'blue' : index % 3 == 1 ? 'green' : 'red'">{{ item }}</span>
+                </div>
+                <div v-if="app.company">
+                    <span>{{ app.company }}</span>
                 </div>
             </div>
         </div>
     </div>
 </template>
-<script setup>
+<script lang="ts" setup>
 import { computed, ref, onMounted } from 'vue'
 
 const app = {
     name: "好看阅读",
     logo: "",
     age: '18+',
-    language: '',
-    category: '',
+    download: '<1万次打开',
+    category: '中文 · 娱乐软件 · 快应用',
     company: "北京哎呦互娱科技有限公司",
     labels: ['小说', '电子书', '阅读', '新闻阅读']
 }
@@ -113,16 +108,16 @@ onMounted(() => {
         align-items: flex-start;
 
         div {
-            margin: 3px 0;
+            margin: 2px 0;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            font-size: 14px;
+            font-size: 13px;
 
             text {
                 color: #666666;
-                font-weight: 500;
+                font-weight: bold;
             }
 
             span {
@@ -131,35 +126,43 @@ onMounted(() => {
             }
         }
 
+        .wrap {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
         .blue {
-            padding: 1px 10px;
-            margin-right: 5px;
+            padding: 1px 6px;
+            margin: 0 5px 5px 0;
             background-image: linear-gradient(0deg, #cfd9df 0%, #e2ebf0 100%);
             border-radius: 15px;
-            font-size: 12px;
-            line-height: 20px;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;
             color: #666666;
             filter: blur(0.25px);
         }
 
         .green {
-            padding: 1px 10px;
-            margin-right: 5px;
+            padding: 1px 6px;
+            margin: 0 5px 5px 0;
             background-image: linear-gradient(0deg, #cfd9df 0%, #e2ebf0 100%);
             border-radius: 15px;
-            font-size: 12px;
-            line-height: 20px;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;
             color: #279a00;
             filter: blur(0.25px);
         }
 
         .red {
-            padding: 1px 10px;
-            margin-right: 6px;
+            padding: 1px 6px;
+            margin: 0 5px 5px 0;
             background-image: linear-gradient(0deg, #cfd9df 0%, #e2ebf0 100%);
             border-radius: 15px;
-            font-size: 12px;
-            line-height: 20px;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;
             color: #ff6a6a;
             filter: blur(0.25px);
         }

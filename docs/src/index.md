@@ -14,16 +14,16 @@ hero:
     alt: logo
   actions:
     - theme: brand
-      text: 项目产品
-      link: /about/product
+      text: 全部项目
+      link: /about/product/
     - theme: alt
-      text: API 速查
+      text: 项目经历
       link: /api
 
 features:
   - title: Android
     details: AS、基础、进阶、FFMPEG、优秀三方库或解决方案、以及《避坑指南》与《面试宝典》
-    link: /android/
+    link: /pages/android/
   - title: Flutter
     details: Flutter 基础、Flutter进阶、以及《避坑指南》与《面试宝典》
     link: /flutter/
