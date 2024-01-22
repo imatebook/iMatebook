@@ -6,6 +6,6 @@ layout: page
 ---
 
 <script setup>
-    import NativeAppDetail from "../../../components/NativeAppDetail.vue"
+    import NativeAppDetail from "/components/NativeAppDetail.vue"
 </script>
 <NativeAppDetail/>

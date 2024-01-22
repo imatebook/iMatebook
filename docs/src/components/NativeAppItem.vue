@@ -4,7 +4,7 @@
         <div class="name">
             <text>{{ app.name }}</text>
             <span>{{ app.age || '18+' }}</span>
-            <span>{{ app.download }}</span>
+            <span>{{ app.download || ''}}</span>
         </div>
         <div class="content">
             <div class="logo">
@@ -30,7 +30,7 @@ import { computed, ref, onMounted } from 'vue'
 
 const app = {
     name: "好看阅读",
-    logo: "",
+    logo: "/images/apps/logo.png",
     age: '18+',
     download: '<1万次打开',
     category: '中文 · 娱乐软件 · 快应用',
@@ -39,11 +39,11 @@ const app = {
 }
 
 onMounted(() => {
-
+    fetch('/')
 })
 
 </script>
-<style lang="scss" module>
+<style lang="scss" scoped>
 .item-wrap {
     width: 92.5%;
     padding: 15px 15px;

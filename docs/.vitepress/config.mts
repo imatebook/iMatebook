@@ -26,7 +26,7 @@ export default defineConfigWithTheme<NativeThemeConfig>({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "https://icdn.netlify.app/blog/logo.png",
+    logo: "/images/logo.png",
 
     // 导航栏
     nav: nav,

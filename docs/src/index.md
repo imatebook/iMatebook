@@ -10,7 +10,7 @@ hero:
   text: 关于技术的、工作的、学习的、生活的...
   tagline: Android & Kotlin & Java、Flutter & Dart、JS & CSS & HTML & TS & Vue、以及 uniApp、快应用、微信 & 抖音 & 快手小程序...
   image:
-    src: "https://icdn.netlify.app/blog/logo_large.png"
+    src: "/images/logo_large.png"
     alt: logo
   actions:
     - theme: brand

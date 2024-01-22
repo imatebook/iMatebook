@@ -6,7 +6,7 @@ hero:
   # text: 总存款
   tagline: 总存款（计算日期截止至上月）
   image:
-    src: "https://icdn.netlify.app/blog/logo_large.png"
+    src: "/images/logo_large.png"
     alt: logo
 
 features:
