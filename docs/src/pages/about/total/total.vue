@@ -2,7 +2,7 @@
     <div class="total">
         <div class="container">
             <div class="hero">
-                <div class="main" v-for="item in hero">
+                <div class="card" v-for="item in hero">
                     <div>
                         <span class="clip">{{ item.value }}</span>
                     </div>
@@ -141,7 +141,7 @@ function tapManager() {
     display: flex;
     flex-direction: column;
 
-    .main {
+    .card {
         flex: 1;
         padding: 30px 0 15px;
         margin: 0 5px;
@@ -159,11 +159,22 @@ function tapManager() {
             margin-bottom: 20px;
         }
 
+        &:hover {
+            opacity: 0.8;
+
+            .clip {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+
         .clip {
             background: var(--vp-home-hero-name-background);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: var(--vp-home-hero-name-color);
+
+
         }
 
         .text {

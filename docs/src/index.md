@@ -18,7 +18,7 @@ hero:
       link: /pages/api
 
 features:
-  - title: 高分项目
+  - title: 优秀项目
     details: 查看更多项目
     link: /pages/android/
   - title: 精选博客

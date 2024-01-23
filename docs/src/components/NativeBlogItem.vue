@@ -1,27 +1,19 @@
 
 <template>
     <div class="item-wrap n-f-s" :class="{ 'item-shadow': shadow }">
-        <div class="name n-f-r">
-            <div class="text">{{ app.name }}</div>
-            <div>
-                <span>{{ app.age || '18+' }}</span>
-                <span>{{ app.download || '' }}</span>
-            </div>
-        </div>
         <div class="content">
             <div class="logo">
-                <img :src="app.logo" />
+                <img :src="blog.cover" />
             </div>
             <div class="labels">
+                <div class="name n-f-r">
+                    <span>{{ blog.name }}</span>
+                </div>
+                <div class="name n-f-r">
+                    <span>{{ blog.author }}</span>
+                </div>
                 <div>
-                    <span>{{ app.category || '娱乐软件' }}</span>
-                </div>
-                <div v-if="app.labels" class="wrap">
-                    <span v-for="(item, index) in app.labels"
-                        :class="index % 3 == 0 ? 'blue' : index % 3 == 1 ? 'green' : 'red'">{{ item }}</span>
-                </div>
-                <div v-if="app.company">
-                    <span>{{ app.company }}</span>
+                    <span>{{ blog.intro }}</span>
                 </div>
             </div>
         </div>
@@ -29,8 +21,8 @@
 </template>
 <script lang="ts" setup>
 import { onMounted } from 'vue'
-import { type AppProp } from "../types/index"
-defineProps<{ app: AppProp, shadow?: boolean }>()
+import { type BlogProp } from "../types/index"
+defineProps<{ blog: BlogProp, shadow?: boolean }>()
 
 onMounted(() => {
 
@@ -50,10 +42,8 @@ onMounted(() => {
     margin: 20px auto 10px;
 
     .name {
-        display: flex;
-        flex-direction: row;
 
-        .text {
+        text {
             font-size: 23px;
             font-weight: bold;
             color: #333333;

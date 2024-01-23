@@ -33,6 +33,8 @@ const { hasSidebar } = useSidebar()
   border-top: 1px solid var(--vp-c-gutter);
   padding: 32px 24px;
   background-color: var(--vp-c-bg);
+
+
 }
 
 .VPFooter.has-sidebar {
@@ -71,7 +73,13 @@ const { hasSidebar } = useSidebar()
 }
 
 .link a {
-  text-decoration: none;
   margin: 0 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link a :hover {
+  color: aqua;
+  text-decoration: underline;
 }
 </style>
