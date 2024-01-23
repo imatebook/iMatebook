@@ -10,10 +10,10 @@ const { hasSidebar } = useSidebar()
   <footer v-if="theme.footer && frontmatter.footer !== false" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
       <p class="link">
-        <a href="/about/" target="_self">关于我们</a>
-        <a href="/about/me" target="_self">关于作者</a>
-        <a href="/about/product/" target="_self">我的项目</a>
-        <a href="/about/product/" target="_self">项目经历</a>
+        <a href="/pages/about/" target="_self">关于我们</a>
+        <a href="/pages/about/me" target="_self">关于作者</a>
+        <a href="/pages/about/product/" target="_self">我的项目</a>
+        <a href="/pages/about/product/" target="_self">项目经历</a>
       </p>
       <p v-if="theme.footer.message" class="message" v-html="theme.footer.message"></p>
       <p v-if="theme.footer.createYear && theme.footer.copyrightHtml" class="copyright">

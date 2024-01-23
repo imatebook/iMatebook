@@ -1,15 +1,16 @@
 
 <template>
-    <div class="app-wrap">
-        <NativeAppItem v-for="item in appList" @click="tapItem(item)" />
+    <div class="app-wrap n-f">
+        <NativeAppItem v-for="item in appList" :app="item" @click="tapItem(item)" />
     </div>
 </template>
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vitepress'
 import NativeAppItem from './NativeAppItem.vue';
+import { type AppProp } from "../types/index"
 const router = useRouter()
-const appList = ref([])
+const appList = ref<AppProp[]>([])
 onMounted(() => {
     fetch("/mock/app-list.json")
         .then((response) => {
@@ -30,12 +31,7 @@ function tapItem(item: any) {
 </script>
 <style lang="scss" scoped>
 .app-wrap {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
 </style>

@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useData } from 'vitepress'
+import NativeAppList from "/components/NativeAppList.vue"
 const { theme, frontmatter } = useData()
 const blogList = ref([
     {},
@@ -35,6 +36,8 @@ fetchData()
 
 <template>
     <div class="layout">
+        <h2 class="h2">高分项目</h2>
+        <NativeAppList />
         <!-- <h2 class="h2">特色功能</h2>
         <h4 class="h4">一站式技术搜索</h4>
         <div>本站内容中包含部分技术教程，可以利用搜索框快速搜索到相关文档,快速到达你想要找的内容。</div>
@@ -84,7 +87,7 @@ fetchData()
 </template>
 <style lang="scss" scoped>
 .layout {
-    margin: 0 12vw;
+    margin: 0 8vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,7 +1,29 @@
 [
   {
+    "name": "鱼丸星球",
+    "logo": "/images/app/logo.png",
+    "age": "18+",
+    "download": ">1000万次下载",
+    "category": "中文 · 娱乐软件 · 快应用",
+    "company": "北京闲徕互娱网络科技有限公司",
+    "labels": ["语音", "直播", "阅读", "语音社交"],
+    "screenshot": [],
+    "sort": 99
+  },
+  {
     "name": "好看阅读",
-    "logo": "/images/apps/logo.png",
+    "logo": "/images/app/logo.png",
+    "age": "18+",
+    "download": "<1万次打开",
+    "category": "中文 · 娱乐软件 · 快应用",
+    "company": "北京哎呦互娱科技有限公司",
+    "labels": ["小说", "电子书", "阅读", "新闻阅读"],
+    "screenshot": [],
+    "sort": 99
+  },
+  {
+    "name": "好看阅读",
+    "logo": "/images/app/logo.png",
     "age": "18+",
     "download": "<1万次打开",
     "category": "中文 · 娱乐软件 · 快应用",

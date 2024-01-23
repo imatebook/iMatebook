@@ -1,10 +1,10 @@
 
 <template>
-    <div class="item-wrap">
-        <div class="name">
+    <div class="item-wrap n-f-s">
+        <div class="name n-f-r">
             <text>{{ app.name }}</text>
             <span>{{ app.age || '18+' }}</span>
-            <span>{{ app.download || ''}}</span>
+            <span>{{ app.download || '' }}</span>
         </div>
         <div class="content">
             <div class="logo">
@@ -26,20 +26,12 @@
     </div>
 </template>
 <script lang="ts" setup>
-import { computed, ref, onMounted } from 'vue'
-
-const app = {
-    name: "好看阅读",
-    logo: "/images/apps/logo.png",
-    age: '18+',
-    download: '<1万次打开',
-    category: '中文 · 娱乐软件 · 快应用',
-    company: "北京哎呦互娱科技有限公司",
-    labels: ['小说', '电子书', '阅读', '新闻阅读']
-}
+import { onMounted } from 'vue'
+import { type AppProp } from "../types/index"
+defineProps<{ app: AppProp }>()
 
 onMounted(() => {
-    fetch('/')
+    
 })
 
 </script>
@@ -47,24 +39,18 @@ onMounted(() => {
 .item-wrap {
     width: 92.5%;
     padding: 15px 15px;
-    margin-top: 30px;
+    margin: 20px auto 10px;
     background-color: #FFFFFF;
     border-radius: 10px;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.065);
 
     .name {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-size: 25px;
-        font-weight: bold;
-        color: #333333;
+
+        text {
+            font-size: 23px;
+            font-weight: bold;
+            color: #333333;
+        }
 
         span {
             padding: 1px 10px;
@@ -72,7 +58,6 @@ onMounted(() => {
             border: 1px solid #cfd9df;
             border-radius: 15px;
             font-size: 10px;
-            line-height: 15px;
             color: #666666;
             filter: blur(0.25px);
         }
