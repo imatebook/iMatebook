@@ -8,7 +8,14 @@ export interface AppProp {
   company: string;
   labels: string;
   intro?: string;
+  introList?: AppIntroProp[];
   screenshot?: string[];
+}
+
+export interface AppIntroProp {
+  title?: string;
+  image?: string;
+  intros: string[];
 }
 
 export interface BlogProp {

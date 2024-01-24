@@ -26,13 +26,15 @@
                 <div class="value">￥ {{ item.value }}</div>
                 <div class="name">{{ item.name }}</div>
             </div>
+            <FloatingBubble></FloatingBubble>
+            <Button>按钮</Button>
         </div>
-        <FloatingBubble></FloatingBubble>
+
     </div>
 </template>
 <script setup>
 import { ref, computed } from 'vue'
-// import { FloatingBubble } from 'vant';
+import { FloatingBubble, showToast, Button } from 'vant';
 const baseBalance = 349500
 const incomeList = [
     {
@@ -112,6 +114,7 @@ function formatNum(num = 0) {
 function tapManager() {
 
 }
+showToast("测试")
 </script>
 <style lang="scss" scoped>
 .total {

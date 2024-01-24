@@ -1,6 +1,6 @@
 <template>
-    <div class="item-wrap n-f-s" :class="{ 'item-shadow': shadow }">
-        <div class="name n-f-r">
+    <div class="item-wrap" n-f-s :class="{ 'item-shadow': shadow }">
+        <div class="name" n-f-r>
             <div class="text">{{ app.name }}</div>
             <div>
                 <span>{{ app.age || '18+' }}</span>
@@ -45,8 +45,6 @@ defineProps<{ app: AppProp, shadow?: boolean }>()
     margin: 20px auto 10px;
 
     .name {
-        display: flex;
-        flex-direction: row;
 
         .text {
             font-size: 23px;

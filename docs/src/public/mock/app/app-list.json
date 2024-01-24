@@ -1,17 +1,19 @@
 [
   {
+    "id": "yuwan",
     "name": "鱼丸星球",
-    "logo": "/images/app/logo.png",
+    "logo": "/images/app/yuwan/logo.png",
     "age": "18+",
     "isTop": true,
     "download": ">1000万次下载",
-    "category": "中文 · 娱乐软件 · 快应用",
+    "category": "中文 · 娱乐app",
     "company": "北京闲徕互娱网络科技有限公司",
     "labels": ["语音", "直播", "阅读", "语音社交"],
-    "screenshot": [],
+    "intro": "鱼丸星球APP是一款语音交友软件。软件聚集了众多网络歌手和声优才艺主播，主打在线点唱、连麦互动、音乐互动交友。通过音乐认识新朋友，打发无聊的闲暇时光，深受年轻人的喜爱。鱼音的用户们都是单身的优质男女，让你可以在这里轻松的交到异性朋友，随时随地即可享受声音好听又有才艺的小哥哥小姐姐跟你直播聊天，为你唱歌。鱼音里所有的用户均经过严格的审核，保证交友的安全性，让你可以放心交友。",
     "sort": 99
   },
   {
+    "id": "haokan",
     "name": "好看阅读",
     "logo": "/images/app/logo.png",
     "age": "18+",
@@ -24,7 +26,8 @@
     "sort": 99
   },
   {
-    "name": "好看阅读",
+    "id": "gungun",
+    "name": "滚滚小说",
     "logo": "/images/app/logo.png",
     "age": "18+",
     "isTop": true,

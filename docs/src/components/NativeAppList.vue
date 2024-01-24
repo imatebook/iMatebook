@@ -15,7 +15,7 @@ const props = defineProps<{ isTop: boolean }>()
 const router = useRouter()
 const appList = ref<AppProp[]>([])
 onMounted(() => {
-    fetch("/mock/app-list.json")
+    fetch("/mock/app/app-list.json")
         .then((response) => {
             console.log(response)
             return response.json()

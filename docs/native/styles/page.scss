@@ -1,0 +1,70 @@
+.n-page {
+  padding: 30px 24px 48px;
+}
+
+@media (min-width: 640px) {
+  .n-page {
+    padding: 30px 30px 64px;
+  }
+}
+
+@media (min-width: 960px) {
+  .n-page {
+    padding: 30px;
+  }
+}
+
+.n-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  //   justify-content: flex-start;
+  //   align-items: center;
+  margin: 0 auto;
+  max-width: 1152px;
+  min-height: 100vh;
+}
+
+.n-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.065);
+}
+
+.n-tabs {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+
+  div {
+    transform: scale(1);
+    opacity: 0.9;
+    padding: 10px 20px;
+    margin: 0 6px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-radius: 1px 1px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+
+    &:hover {
+      opacity: 0.9;
+      color: #fb2205;
+    }
+  }
+
+  .active {
+    transform: scale(1.03);
+    opacity: 1;
+    background-color: #ffffff;
+    border-top: 1px solid #fb2205;
+    color: #fb2205;
+  }
+}

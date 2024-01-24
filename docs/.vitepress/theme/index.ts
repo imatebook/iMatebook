@@ -3,7 +3,7 @@ import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
-import "../../native/styles/index.scss"
+import "../../native/styles/index.scss";
 import NativeHomeLayout from "../../native/components/NativeHomeLayout.vue";
 export default {
   extends: DefaultTheme,

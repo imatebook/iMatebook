@@ -7,7 +7,7 @@ const { hasSidebar } = useSidebar()
 </script>
 
 <template>
-  <footer v-if="theme.footer && frontmatter.footer !== false" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
+  <footer v-if="theme.footer && frontmatter.footer !== false" class="n-footer" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
       <p class="link">
         <a href="/pages/about/" target="_self">关于我们</a>
@@ -27,7 +27,7 @@ const { hasSidebar } = useSidebar()
 </template>
 
 <style scoped>
-.VPFooter {
+.n-footer {
   position: relative;
   z-index: var(--vp-z-index-footer);
   border-top: 1px solid var(--vp-c-gutter);
@@ -37,22 +37,22 @@ const { hasSidebar } = useSidebar()
 
 }
 
-.VPFooter.has-sidebar {
+.n-footer.has-sidebar {
   display: none;
 }
 
-.VPFooter :deep(a) {
+.n-footer :deep(a) {
   text-decoration-line: underline;
   text-underline-offset: 2px;
   transition: color 0.25s;
 }
 
-.VPFooter :deep(a:hover) {
+.n-footer :deep(a:hover) {
   color: var(--vp-c-text-1);
 }
 
 @media (min-width: 768px) {
-  .VPFooter {
+  .n-footer {
     padding: 32px;
   }
 }

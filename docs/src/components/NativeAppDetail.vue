@@ -1,37 +1,40 @@
 
 <template>
-    <div class="app-wrap">
-        <NativeAppItem :app="app" />
-        <div class="item-wrap">
-            <div class="title">
-                <div class="adorn"></div>
-                <text>应用截图</text>
-                <div class="adorn"></div>
-            </div>
-            <div class="scroll">
-                <div class="container">
-                    <div class="item" v-for="item in app.screenshot"></div>
+    <div class="n-page">
+        <div class="n-container">
+            <NativeAppItem :app="app" :shadow="true" />
+            <div class="n-card-wrap n-card">
+                <div class="n-tabs" m-b-20>
+                    <div @click="index = 0" :class="{ active: index == 0 }">应用内容</div>
+                    <div @click="index = 1" :class="{ active: index == 1 }">应用截图</div>
+                    <div @click="index = 2" :class="{ active: index == 2 }">应用荣誉</div>
                 </div>
+                <block v-if="index == 0">
+                    <block v-for="item in introList">
+                        <div class="title" v-if="item.title">{{ item.title }}</div>
+                        <div class="intro" v-for="intro in item.intros">{{ intro }}</div>
+                    </block>
+                </block>
+                <block v-else-if="index == 1">
+                    <div class="scroll">
+                        <div class="container">
+                            <div class="item" v-for="(image, index) in screenshot">
+                                <img :src="image" @click="tapImage(image, index)" />
+                            </div>
+                        </div>
+                    </div>
+                </block>
             </div>
-            <div class="title">
-                <div class="adorn"></div>
-                <text>应用介绍</text>
-                <div class="adorn"></div>
-            </div>
-            <div class="intro">{{ app.intro }}</div>
-            <div class="title">
-                <div class="adorn"></div>
-                <text>玩法介绍</text>
-                <div class="adorn"></div>
-            </div>
-            <div class="intro">{{ app.intro }}</div>
         </div>
     </div>
 </template>
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
+import { showImagePreview } from 'vant';
 import NativeAppItem from './NativeAppItem.vue';
-import { type AppProp } from "../types/index"
+
+import { type AppProp, type AppIntroProp } from "../types/index"
+
 const app = ref<AppProp>({
     name: "",
     logo: "",
@@ -43,98 +46,102 @@ const app = ref<AppProp>({
     intro: "",
     screenshot: []
 })
+const index = ref(0)
+const screenshot = ref<string[]>([])
+const introList = ref<AppIntroProp[]>([])
 onMounted(() => {
-    fetch("/mock/app-list.json")
+    const query = getQueryData(window.location.search)
+    let id = query["id"] || "yuwan"
+    fetch(`/mock/app/detail/${id}.json`)
         .then((response) => {
-            console.log(response)
             return response.json()
         })
-        .then((data: AppProp[]) => {
-            app.value = data[0]
+        .then((data: AppProp) => {
+            app.value = data
+            screenshot.value = data.screenshot || []
+            introList.value = [
+                { intros: [data.intro || ''] },
+                ...(data.introList || [])
+            ]
         }).catch((error) => {
             console.error('无法获取 JSON 数据', error);
         });
 })
 
+function tapImage(image: string, index: number) {
+    console.log("tapImage")
+    // showImagePreview(screenshot.value, index)
+}
+
+function getQueryData(search = '') {
+    let searchArray = search.length > 1 ? search.substring(1, search.length).split("&") : [];
+    let queryData = new Object();
+    for (var i = 0; i < searchArray.length; i++) {
+        var queryArray = searchArray[i].split("=");
+        queryData[decodeURIComponent(queryArray[0])] = decodeURIComponent(queryArray[1]);
+    }
+    return queryData;
+}
 </script>
 <style lang="scss" scoped>
-.app-wrap {
-    width: 100vw;
-    min-height: 100vh;
-    // background-color: #f9f9f9;
+.n-card-wrap {
+    width: 100%;
+    padding: 15px 15px;
+    margin: 20px auto;
+
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 
-    .item-wrap {
-        width: 92.5%;
-        padding: 15px 15px;
-        margin: 20px auto;
-        background-color: #FFFFFF;
-        border-radius: 10px;
+
+    .title {
+        margin: 10px 0;
         display: flex;
         box-sizing: border-box;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
-        align-items: flex-start;
-        box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.065);
+        align-items: center;
+        font-size: 17px;
+        font-weight: bold;
+        color: #333333;
+    }
+
+    .intro {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #888888;
+    }
+
+    .scroll {
+        width: 100%;
+        margin: 10px 0 20px;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        // overflow: hidden;
+        overflow-x: auto;
 
 
-        .title {
-            margin: 10px 0;
+        .container {
             display: flex;
             box-sizing: border-box;
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            font-size: 25px;
-            font-weight: bold;
-            color: #333333;
-
-            text {
-                margin: auto 8px;
-            }
-
-            .adorn {
-                width: 6px;
-                height: 20px;
-                border-radius: 10px 0 10px 0;
-                background-image: linear-gradient(0deg, #f83600 0%, #f9d423 100%)
-            }
+            justify-content: center;
+            align-items: flex-start;
         }
 
-        .scroll {
-            width: 100%;
-            margin: 10px 0 20px;
-            overflow: hidden;
-            overflow-x: auto;
-
-
-            .container {
-                display: flex;
-                box-sizing: border-box;
-                flex-direction: row;
-                justify-content: center;
-                align-items: flex-start;
-            }
-
-            .item {
-                width: 30vw;
-                height: 100px;
-                margin: 30px;
-                background-color: #f83600;
-                border-radius: 10px;
-            }
-        }
-
-        .intro {
-            margin-bottom: 20px;
-            font-size: 15px;
-            font-weight: 500;
-            color: #888888;
+        .item {
+            width: 20vw;
+            margin: 0 30px;
+            border-radius: 10px;
         }
     }
+
+
 }
 </style>
