@@ -7,6 +7,8 @@ export interface AppProp {
   category: string;
   company: string;
   labels: string;
+  intro?: string;
+  screenshot?: string[];
 }
 
 export interface BlogProp {

@@ -1,7 +1,7 @@
 
 <template>
     <div class="app-wrap">
-        <NativeAppItem />
+        <NativeAppItem :app="app" />
         <div class="item-wrap">
             <div class="title">
                 <div class="adorn"></div>
@@ -31,17 +31,29 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
 import NativeAppItem from './NativeAppItem.vue';
-const app = {
-    name: "好看阅读",
+import { type AppProp } from "../types/index"
+const app = ref<AppProp>({
+    name: "",
     logo: "",
-    language: '',
-    category: '',
-    screenshot: ['', '', '', '', '', '', ''],
-    company: "北京哎呦互娱科技有限公司",
-    intro: "好看阅读快应用拥有海量的原创小说内容，分类众多，如果你想找最新最热门的小说，不妨来这里看看；即搜即看，书荒从此说再见；"
-}
+    age: "",
+    download: "",
+    category: "",
+    company: "",
+    labels: "",
+    intro: "",
+    screenshot: []
+})
 onMounted(() => {
-
+    fetch("/mock/app-list.json")
+        .then((response) => {
+            console.log(response)
+            return response.json()
+        })
+        .then((data: AppProp[]) => {
+            app.value = data[0]
+        }).catch((error) => {
+            console.error('无法获取 JSON 数据', error);
+        });
 })
 
 </script>

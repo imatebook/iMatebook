@@ -1,4 +1,3 @@
-
 <template>
     <div class="item-wrap n-f-s" :class="{ 'item-shadow': shadow }">
         <div class="name n-f-r">
@@ -27,16 +26,12 @@
         </div>
     </div>
 </template>
+
 <script lang="ts" setup>
-import { onMounted } from 'vue'
 import { type AppProp } from "../types/index"
 defineProps<{ app: AppProp, shadow?: boolean }>()
-
-onMounted(() => {
-
-})
-
 </script>
+
 <style lang="scss" scoped>
 .item-shadow {
     background-color: #FFFFFF;
