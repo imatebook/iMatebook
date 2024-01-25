@@ -1,15 +1,11 @@
 ---
-title: technology
-titleTemplate: 技术
-description: 技术
-layout: doc
-navbar: true
-sidebar: true
-outline: 2
-lastUpdated: true
-editLink: false
-footer: true
+title: 技术博客
+titleTemplate: 技术博客
+description: 技术博客
+layout: page
 ---
 
-# 博客
-#
+<script setup>
+    import NativeBlogList from "/components/NativeBlogList.vue"
+</script>
+<NativeBlogList/>

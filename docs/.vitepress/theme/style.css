@@ -50,10 +50,10 @@
   --vp-c-indigo-3: #5672cd;
   --vp-c-indigo-soft: rgba(100, 108, 255, 0.14);
 
-  --vp-c-indigo-1: #fb2205;
+  /* --vp-c-indigo-1: #fb2205;
   --vp-c-indigo-2: #dc1a00;
   --vp-c-indigo-3: #f44831;
-  --vp-c-indigo-soft: rgba(255, 24, 7, 0.14);
+  --vp-c-indigo-soft: rgba(255, 24, 7, 0.14); */
 
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);

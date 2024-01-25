@@ -1,10 +1,9 @@
 
 <template>
-    <div class="app-wrap n-f">
-        <router-link v-for="item in appList" :to="item.path">
-            <NativeBlogItem :blog="item" />
-        </router-link>
-
+    <div :class="{ 'n-page': !isTop }">
+        <div :class="{ 'n-container': !isTop }" n-f-s n-w-100>
+            <NativeBlogItem v-for="item in blogList" :blog="item" @click="tapItem(item)" />
+        </div>
     </div>
 </template>
 <script lang="ts" setup>
@@ -16,7 +15,7 @@ import { type BlogProp } from "../types/index"
 const props = defineProps<{ isTop: boolean }>()
 
 const router = useRouter()
-const appList = ref<BlogProp[]>([])
+const blogList = ref<BlogProp[]>([])
 onMounted(() => {
     fetch("/mock/blog-list.json")
         .then((response) => {
@@ -24,7 +23,7 @@ onMounted(() => {
             return response.json()
         })
         .then((data: BlogProp[]) => {
-            appList.value = props.isTop ? data.filter((item) => item.isTop == props.isTop) : data
+            blogList.value = props.isTop ? data.filter((item) => item.isTop == props.isTop) : data
         }).catch((error) => {
             console.error('无法获取 JSON 数据', error);
         });
@@ -34,8 +33,4 @@ function tapItem(item: BlogProp) {
     router.go(item.path)
 }
 </script>
-<style lang="scss" scoped>
-.app-wrap {
-    width: 100%;
-}
-</style>
+<style lang="scss" scoped></style>

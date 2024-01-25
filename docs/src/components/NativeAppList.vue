@@ -1,7 +1,9 @@
 
 <template>
-    <div class="app-wrap n-f">
-        <NativeAppItem v-for="item in appList" :app="item" @click="tapItem(item)" />
+    <div :class="{ 'n-page': !isTop }">
+        <div :class="{ 'n-container': !isTop }" n-f-s n-w-100>
+            <NativeAppItem v-for="item in appList" :app="item" @click="tapItem(item)" />
+        </div>
     </div>
 </template>
 <script lang="ts" setup>
@@ -10,7 +12,7 @@ import { useRouter } from 'vitepress'
 import NativeAppItem from './NativeAppItem.vue';
 import { type AppProp } from "../types/index"
 
-const props = defineProps<{ isTop: boolean }>()
+const props = defineProps<{ isTop?: boolean }>()
 
 const router = useRouter()
 const appList = ref<AppProp[]>([])

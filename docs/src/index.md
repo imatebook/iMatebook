@@ -15,20 +15,20 @@ hero:
       link: /pages/about/product/
     - theme: alt
       text: 技术博客
-      link: /pages/api
+      link: /pages/technology/blog/
 
 features:
   - title: 优秀项目
-    details: 查看更多项目
-    link: /pages/android/
+    details: 点击查看全部项目
+    link: /pages/about/product/
   - title: 精选博客
     details: 精选技术博客
-    link: /flutter/
-  - title: 参与
-    details: 记录事件
+    link: /pages/technology/blog/
+  - title: API 速查
+    details: Android、Flutter、JS 等API速查
     link: /web/
-  - title: 参与
-    details: 记录事件
+  - title: 命令速查
+    details: flutter、npm 等命令速查
     link: /web/
 ---
 

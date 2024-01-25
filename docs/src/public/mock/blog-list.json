@@ -1,34 +1,20 @@
 [
   {
-    "cover": "",
-    "name": "Android Studio开发环境搭建",
-    "author": "Blues Feng",
-    "intro": "Android Studio开发环境搭建",
+    "cover": "/images/logo_large.png",
+    "name": "Java 中==和 equals()和 hashCode()的区别",
+    "author": "王敬佩",
+    "intro": "详解",
     "isTop": true,
-    "path": "https://blog.csdn.net/JerkSpan/article/details/85811265"
+    "label": "Java",
+    "path": "/pages/android/interview/java/special/1"
   },
   {
-    "cover": "",
-    "name": "Android Studio开发环境搭建",
-    "author": "",
+    "cover": "/images/logo_large.png",
+    "name": "Flutter 命令速查",
+    "author": "王敬佩",
     "intro": "",
+    "label": "Flutter",
     "isTop": true,
-    "path": "https://blog.csdn.net/JerkSpan/article/details/85811265"
-  },
-  {
-    "cover": "",
-    "name": "Android Studio开发环境搭建",
-    "author": "",
-    "intro": "",
-    "isTop": true,
-    "path": "https://blog.csdn.net/JerkSpan/article/details/85811265"
-  },
-  {
-    "cover": "",
-    "name": "Android Studio开发环境搭建",
-    "author": "",
-    "intro": "",
-    "isTop": true,
-    "path": "https://blog.csdn.net/JerkSpan/article/details/85811265"
+    "path": "/pages/flutter/command/quick"
   }
 ]

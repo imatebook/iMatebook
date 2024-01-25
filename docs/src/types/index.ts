@@ -23,6 +23,7 @@ export interface BlogProp {
   name: string;
   intro?: string;
   author?: string;
+  label?: string;
   isTop?: boolean;
   path: string;
 }

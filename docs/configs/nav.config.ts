@@ -95,6 +95,13 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: "",
         items: [
+          { text: "Flutter 命令行速查", link: "/pages/flutter/command/quick" },
+          { text: "Flutter 命令行", link: "https://flutter.cn/" },
+        ],
+      },
+      {
+        text: "",
+        items: [
           {
             text: "flutter_lints",
             link: "https://pub-web.flutter-io.cn/packages/flutter_lints",
@@ -146,7 +153,7 @@ export const nav: DefaultTheme.NavItem[] = [
             link: "https://cn.vuejs.org/guide/introduction.html",
           },
         ],
-      }
+      },
     ],
   },
   {

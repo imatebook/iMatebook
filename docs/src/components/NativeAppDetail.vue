@@ -5,14 +5,17 @@
             <NativeAppItem :app="app" :shadow="true" />
             <div class="n-card-wrap n-card">
                 <div class="n-tabs" m-b-20>
-                    <div @click="index = 0" :class="{ active: index == 0 }">应用内容</div>
+                    <div @click="index = 0" :class="{ active: index == 0 }">内容介绍</div>
                     <div @click="index = 1" :class="{ active: index == 1 }">应用截图</div>
-                    <div @click="index = 2" :class="{ active: index == 2 }">应用荣誉</div>
+                    <div @click="index = 2" :class="{ active: index == 2 }">项目技术</div>
+                    <div @click="index = 3" :class="{ active: index == 3 }">团队荣誉</div>
                 </div>
                 <block v-if="index == 0">
                     <block v-for="item in introList">
                         <div class="title" v-if="item.title">{{ item.title }}</div>
-                        <div class="intro" v-for="intro in item.intros">{{ intro }}</div>
+                        <div class="intro" v-for="intro in item.intros">
+                            <span v-html="intro"></span>
+                        </div>
                     </block>
                 </block>
                 <block v-else-if="index == 1">
@@ -22,6 +25,16 @@
                                 <img :src="image" @click="tapImage(image, index)" />
                             </div>
                         </div>
+                    </div>
+                </block>
+                <block v-else-if="index == 2">
+                    <div class="intro">
+                        <span>因保密原因，项目技术暂时不便公开</span>
+                    </div>
+                </block>
+                <block v-else-if="index == 3">
+                    <div class="intro">
+                        <span>数据暂未更新</span>
                     </div>
                 </block>
             </div>
@@ -86,7 +99,7 @@ function getQueryData(search = '') {
 <style lang="scss" scoped>
 .n-card-wrap {
     width: 100%;
-    padding: 15px 15px;
+    padding: 15px 15px 20px;
     margin: 20px auto;
 
     display: flex;
@@ -97,22 +110,28 @@ function getQueryData(search = '') {
 
 
     .title {
-        margin: 10px 0;
+        margin: 15px 0 5px;
+        padding-left: 6px;
         display: flex;
         box-sizing: border-box;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 20px;
         font-weight: bold;
-        color: #333333;
+        color: rgba($color: #fb2205, $alpha: 0.8);
+        border-left: 2px solid  rgba($color: #fb2205, $alpha: 0.8);
+        // border-top-left-radius: 3px;
+        // border-bottom-left-radius: 3px;
     }
 
     .intro {
-        margin-bottom: 20px;
-        font-size: 15px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        font-size: 13px;
         font-weight: 500;
-        color: #888888;
+        color: #666666;
     }
 
     .scroll {

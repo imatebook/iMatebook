@@ -1,5 +1,5 @@
 <template>
-    <div class="item-wrap" n-f-s :class="{ 'item-shadow': shadow }">
+    <div class="item-wrap" n-f-s :class="{ 'card-box': shadow }">
         <div class="name" n-f-r>
             <div class="text">{{ app.name }}</div>
             <div>
@@ -33,16 +33,15 @@ defineProps<{ app: AppProp, shadow?: boolean }>()
 </script>
 
 <style lang="scss" scoped>
-.item-shadow {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.065);
-}
+.item-shadow {}
 
 .item-wrap {
     width: 100%;
     padding: 15px 15px;
-    margin: 20px auto 10px;
+    margin: 10px auto 5px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.065);
 
     .name {
 

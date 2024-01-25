@@ -12,17 +12,22 @@ editLink: false
 ### 1. Java 有哪些数据类型？
 
 - **基本数据类型**：byte、short、int、long、float、double、char、boolean
-- **引用数据类型**：class、interface、[]
+
   > byte、boolean 占用 1 字节，short、char 占用 2 字节，int、float 占用 4 字节，long、double 占用 8 字节
+
+- **引用数据类型**：class、interface、[]
 
 ---
 
-### 2. Java 中 == 和 equals 和 hashCode 的区别 [详解](./detail.md)
+### 2. Java 中 == 和 equals 和 hashCode 的区别 [详解](./special/1.md)
 
-- **==** 一般比较基本数据类型的 **值**；
+- **==** 一般比较基本数据类型的 **值**，或引用数据类型 **内存地址**；
+  > 对象
 - **equals** 一般（**@override**）比较引用数据类型的 **内容**；
+
   > 在不覆写 equals()的情况下，默认比较内存地址，在 Object 中定义实现==；
   > 一般覆写 equals()后，比较的是内容，如:String
+
 - **hashCode** 是 **Object** 定义的一个方法，默认返回一个**离散的 int 型整数**；
   在集合类（**HashMap**、**HashSet**）操作中，为了提高查询速度；
 
@@ -98,5 +103,3 @@ Java 中内部类主要分为**成员内部类**、**局部内部类**（嵌套�
 因为 Java 不支持多继承，支持实现多个接口。都有时候会存在一些使用接口很难解决的问题，这个时候我们可以利用内部类提供的、可以继承多个具体的或者抽象的类的能力来解决程序设计问题。可以这样说，接口只是解决了部分问题，而内部类使得多重继承的解决方案变得更加完美。
 
 ## 三、I/O
-
-[[toc]]
