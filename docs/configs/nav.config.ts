@@ -140,8 +140,10 @@ export const nav: DefaultTheme.NavItem[] = [
           { text: "HTML", link: "/pages/web/html/" },
           { text: "CSS", link: "/pages/web/css/" },
           { text: "JavaScript", link: "/pages/web/js/" },
+          { text: "npm常见命令", link: "/pages/web/npm/" },
         ],
       },
+      
       {
         items: [
           {

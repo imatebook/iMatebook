@@ -1,14 +1,12 @@
 ---
-title: Web
+title: npm常用命令
 titleTemplate: Web
-description: Web
+description: npm常用命令
 layout: doc
 navbar: true
 sidebar: false
-outline: 2
-lastUpdated: true
 editLink: false
-footer: true
+footer: false
 ---
 
 # npm常用命令

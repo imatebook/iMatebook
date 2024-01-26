@@ -15,5 +15,9 @@ export default {
   // Layout,
   enhanceApp({ app, router, siteData }) {
     // ...
+    console.log(`====`);
+    console.log(siteData);
+    // console.log(siteData.value);
+    console.log(`====`);
   },
 } satisfies Theme;

@@ -1,7 +1,7 @@
 [
   {
     "cover": "/images/logo_large.png",
-    "name": "Java 中==和 equals()和 hashCode()的区别",
+    "name": "详解 Java 中==和 equals() 和 hashCode() 的区别",
     "author": "王敬佩",
     "intro": "详解",
     "isTop": true,
@@ -16,5 +16,16 @@
     "label": "Flutter",
     "isTop": true,
     "path": "/pages/flutter/command/quick"
+  },
+
+  {
+    "cover": "/images/logo_large.png",
+    "name": "npm package.json属性详解",
+    "author": "TZYY",
+    "intro": "",
+    "label": "Web",
+    "isTop": true,
+    "path": "/pages/web/npm/packageJson"
   }
+  
 ]
