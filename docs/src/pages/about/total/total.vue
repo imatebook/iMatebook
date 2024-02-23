@@ -35,59 +35,39 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { FloatingBubble, showToast, Button } from 'vant';
-const baseBalance = 349500
+const baseBalance = 566000
 const incomeList = [
     {
-        name: '月度工资（待缴）',
-        value: 4000,
-        time: '2024年01月10日'
+        name: '月度工资（已缴纳）',
+        value: 1560,
+        time: '2024年02月10日'
     },
     {
-        name: '基本工资（已入账）',
-        value: 8900,
-        time: '2024年01月10日'
+        name: '基本工资（已缴纳）',
+        value: 9500,
+        time: '2024年02月10日'
     },
     {
-        name: '绩效工资（已入账）',
-        value: 9400,
-        time: '2024年01月15日'
+        name: '绩效工资（已缴纳）',
+        value: 12500,
+        time: '2024年02月15日'
     },
     {
-        name: '银行理财（已入账）',
-        value: 203800,
-        time: '2024年01月26日'
+        name: '压岁钱（已缴纳）',
+        value: 2000,
+        time: '2024年02月15日'
     },
 ]
 const disburseList = [
     {
         name: '上月支出（生活）',
-        value: -6400,
-        time: '2023年12月'
-    },
-    {
-        name: '上月支出（预留现金-老公）',
-        value: -600,
-        time: '2023年12月'
+        value: -7000,
+        time: '2024年01月'
     },
     {
         name: '本月支出（学费）',
-        value: 0,
-        time: '2023年01月'
-    },
-    {
-        name: '本月支出（预留现金-老公）',
-        value: -800,
-        time: '2023年01月'
-    },
-    {
-        name: '本月支出（预留现金-老婆）',
-        value: -1000,
-        time: '2023年01月'
-    },
-    {
-        name: '本月支出（奖励老婆）',
-        value: -800,
-        time: '2023年01月'
+        value: -1560,
+        time: '2024年02月'
     },
 ]
 
