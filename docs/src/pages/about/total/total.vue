@@ -35,11 +35,11 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { FloatingBubble, showToast, Button } from 'vant';
-const baseBalance = 566000
+const baseBalance = 585000
 const incomeList = [
     {
         name: '月度工资（已缴纳）',
-        value: 1560,
+        value: 0,
         time: '2024年02月10日'
     },
     {
@@ -52,16 +52,11 @@ const incomeList = [
         value: 12500,
         time: '2024年02月15日'
     },
-    {
-        name: '压岁钱（已缴纳）',
-        value: 2000,
-        time: '2024年02月15日'
-    },
 ]
 const disburseList = [
     {
         name: '上月支出（生活）',
-        value: -7000,
+        value: -5440,
         time: '2024年01月'
     },
     {
@@ -161,8 +156,6 @@ showToast("测试")
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: var(--vp-home-hero-name-color);
-
-
         }
 
         .text {

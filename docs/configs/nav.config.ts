@@ -5,6 +5,14 @@ export const nav: DefaultTheme.NavItem[] = [
     text: "技术",
     items: [
       {
+        items: [
+          {
+            text: "HarmonyOS 鸿蒙官网",
+            link: "https://www.harmonyos.com/cn/develop",
+          },
+        ],
+      },
+      {
         text: "技术文档",
         items: [
           { text: "《Git 使用教程》", link: "/pages/technology/git/" },
@@ -12,15 +20,33 @@ export const nav: DefaultTheme.NavItem[] = [
         ],
       },
       {
+        text: "IM 即时通讯",
+        items: [
+          {
+            text: "Tencent IM",
+            link: "https://cloud.tencent.com/product/im",
+          },
+          { text: "融云 IM", link: "https://www.rongcloud.cn/product/im" },
+          { text: "网易云信 RTC", link: "https://yunxin.163.com/im" },
+        ],
+      },
+      {
+        text: "RTC 音视频",
+        items: [
+          {
+            text: "Tencent RTC",
+            link: "https://cloud.tencent.com/product/trtc",
+          },
+          { text: "Agora RTC", link: "https://www.shengwang.cn/" },
+          { text: "ZEGO RTC", link: "https://www.zego.im/" },
+          { text: "相芯美颜 & 视频特效", link: "https://www.faceunity.com/" },
+        ],
+      },
+      {
         text: "解决方案",
         items: [
           { text: "FFmpeg 音视频", link: "https://github.com/FFmpeg/FFmpeg" },
-          {
-            text: "Tencent RTC 实时音视频",
-            link: "https://cloud.tencent.com/product/trtc",
-          },
-          { text: "Agora RTC 实时音视频", link: "https://www.shengwang.cn/" },
-          { text: "ZEGO RTC 实时音视频", link: "https://www.zego.im/" },
+
           { text: "UMeng", link: "https://www.umeng.com/" },
           { text: "Bugly", link: "https://bugly.qq.com/v2/" },
         ],
@@ -43,6 +69,23 @@ export const nav: DefaultTheme.NavItem[] = [
           {
             text: "Android开发者平台",
             link: "https://developer.android.google.cn/?hl=zh-cn",
+          },
+        ],
+      },
+      {
+        text: "",
+        items: [
+          {
+            text: "maven2",
+            link: "https://repo.maven.apache.org/maven2/",
+          },
+          {
+            text: "maven central repository",
+            link: "https://central.sonatype.com/",
+          },
+          {
+            text: "gradle 下载",
+            link: "https://services.gradle.org/distributions/",
           },
         ],
       },
@@ -87,8 +130,9 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: "",
         items: [
-          { text: "dart", link: "https://dart.cn/" },
-          { text: "flutter", link: "https://flutter.cn/" },
+          { text: "dart 中文文档", link: "https://dart.cn/" },
+          { text: "flutter 中文文档", link: "https://flutter.cn/" },
+          { text: "flutter 高效指南", link: "https://dart.cn/guides/language/effective-dart" },
           { text: "flutter package", link: "https://pub-web.flutter-io.cn/" },
         ],
       },
@@ -143,7 +187,7 @@ export const nav: DefaultTheme.NavItem[] = [
           { text: "npm常见命令", link: "/pages/web/npm/" },
         ],
       },
-      
+
       {
         items: [
           {
@@ -153,6 +197,18 @@ export const nav: DefaultTheme.NavItem[] = [
           {
             text: "Vue 文档",
             link: "https://cn.vuejs.org/guide/introduction.html",
+          },
+        ],
+      },
+      {
+        items: [
+          {
+            text: "weui 组件库",
+            link: "https://wechat-miniprogram.github.io/weui/docs/",
+          },
+          {
+            text: "vant 组件库",
+            link: "https://vant-contrib.gitee.io/vant/#/zh-CN",
           },
         ],
       },
@@ -189,6 +245,10 @@ export const nav: DefaultTheme.NavItem[] = [
     items: [
       { text: "快应用开发者中心", link: "https://www.quickapp.cn/" },
       { text: "快应用开发者文档", link: "https://doc.quickapp.cn/" },
+      {
+        text: "快应用开发工具",
+        link: "https://www.quickapp.cn/docCenter/IDEPublicity",
+      },
     ],
   },
   {
